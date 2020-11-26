@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background-color: rgb(34, 40, 49),;
+    background-color: rgb(217, 228, 221);
     padding: 0;
     margin: 0;
 }
@@ -16,6 +16,7 @@ nav {
     position: relative;
     padding: 0em;
     padding-top: .3em;
+    cursor: pointer;
 }
 
 .nav-background {
@@ -34,12 +35,24 @@ nav {
 }
 
 .nav-buttons > a {
-    margin: 1.2em;
+    margin: 1.1em;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    height: 1.4em;
+    width: 4.4em;
 }
+
+.nav-buttons > a:hover {
+    background-color: #d9e4dd;
+    color: #555555;
+    border-radius: 1em;
+}
+
 .hero {
     width: 100%;
     overflow: hidden;
+    padding-bottom: 0px;
+    height: 71em;
 }
 
 .hero > img {
@@ -47,3 +60,44 @@ nav {
     padding-bottom: 2em;
 }
 
+.ssab-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+
+.slide-show-home {
+    width: 57.9em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1em;
+}
+
+.about-home {
+    background-color: #cdc9c3;
+    color: #555555;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1em;
+}
+
+.remf-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+
+.framing {
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1em;
+}
+
+.remodeling {
+    width: 43.3em;
+    height: 31.28em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1em;
+}

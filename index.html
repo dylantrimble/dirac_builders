@@ -4,28 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./styles/images/Logo/Standard Logo Files/favicon.png">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Dirac Builders</title>
 </head>
 
 <body>
     <nav class="nav">
         <div class="nav-background">
-        <div class="logo-wrapper">
-        <img class="logo-image" src="./styles/images/Logo/Standard Logo Files/Monochrome on Transparent.png" alt="dirac logo">
+            <div class="logo-wrapper" onclick="home()">
+                <img class="logo-image" src="./styles/images/Logo/Standard Logo Files/Monochrome on Transparent.png"
+                    alt="dirac logo">
+            </div>
+            <div class="nav-buttons">
+                <a class='home' onclick="home()">Home</a>
+                <a class="portfolio" onclick="portfolio()">Portfolio</a>
+                <a class='contact' onclick="contact()">Contact</a>
+                <a class="about" onclick="about()">About</a>
+            </div>
         </div>
-        <div class="nav-buttons">
-            <a class='home' onclick="home">Home</a>
-            <a class="portfolio" onclick="portfolio">Portfolio</a>
-            <a class='contact' onclick="contact">Contact</a>
-            <a class="about" onclick="about">About</a>
-        </div>
-    </div>
     </nav>
     <div class="hero">
         <img src="./styles/images/hero-House.png">
+    </div>
+    <div id="home-page">
+        <div class="ssab-wrapper">
+            <img class="slide-show-home" src="./styles/images/solid-bath-remodel.jpeg" alt="remodeled bathroom">
+            <div class="about-home">
+                <h1>Who we are:</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perspiciatis odio ab rem dignissimos.
+                Dignissimos dolorum esse similique? Totam quae hic inventore est et laboriosam velit asperiores natus
+                reprehenderit voluptatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+                accusantium deserunt eius eaque asperiores, voluptate, ratione repellendus, nisi nemo odio saepe earum.
+                Porro quae ad saepe odit, dolorum a architecto!
+            </div>
+        </div>
+        <div class='remf-wrapper'>
+            <img class="framing" src="./styles/images/framed-house.jpg" alt="framed house">
+            <img class="remodeling" src="./styles/images/Large-island-with-quartzite-countertop.jpg"
+                alt="remodeled kitchen">
+        </div>
     </div>
 
     <script src="./scripts/app.js"></script>
