@@ -15,4 +15,3 @@ let contact = () => {
 let about = () => {
     console.log('about')
 }
-
