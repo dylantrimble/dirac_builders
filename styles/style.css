@@ -19,7 +19,7 @@ body {
 .home-nav {
     width: 100%;
     height: 5rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -27,7 +27,7 @@ body {
 }
 
 .home-nav{
-    position: absolute;
+    position:fixed;
     top: 0;
     left: 0;
 }
@@ -115,7 +115,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
     width: 100px;
     height: 100px;
@@ -338,6 +338,7 @@ body {
 
 .main-c-over h2 {
     color:whitesmoke;
+    padding: .4rem;
 }
 
 .main-c-over a {
@@ -357,8 +358,83 @@ body {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.35);
 }
 
+/* Services Page CSS */
+
+.services-showcase {
+    background-color: var(--overlay-clor);
+    color: whitesmoke;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-showcase:before {
+    content: '';
+    /* The background image */
+    background-image: url("./images/concept-reality.jpg");
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 500px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.services-showcase .showcase-inner {
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    width: 100%;
+    grid-gap: 1rem;
+}
+
+.service-offered {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.service-offered img{
+    width: 100%;
+    height: 100%;
+}
+
+.service-offered h2 {
+    padding: .3rem;
+}
+.service-offered p {
+    padding: .4rem;
+}
+
+/* Media Queries for all pages */
 
 @media only screen and (min-width: 460px)  {
+
+    /* Main/Home - Universal Components */
     .carousel-item .slide-text {
         left: 10rem;
         width: 14.5rem;
@@ -366,6 +442,8 @@ body {
 }
 
 @media only screen and (min-width: 750px)  {
+
+    /* Main/Home - Universal Components */
     .carousel-item .slide-text {
         left: 12rem;
         width: 14.5rem;
@@ -374,9 +452,19 @@ body {
     .carousel-inner{
         width: 585px;
     }
+
+    /* Services */
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+    }
+
 }
 
 @media only screen and (min-width: 1000px)  {
+
+    /* Main/Home - Universal Components*/
     .showcase{
         width: 100%;
     }
@@ -413,4 +501,15 @@ body {
         flex-direction: row;
     }
 
+    /* Services */
+
+}
+
+@media only screen and (min-width: 1400px) {
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0;
+    }
 }
