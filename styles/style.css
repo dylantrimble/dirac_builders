@@ -430,6 +430,56 @@ body {
     padding: .4rem;
 }
 
+
+/* Portfolio */
+
+.portfolio-showcase {
+    background-color: var(--overlay-clor);
+    color: whitesmoke;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-showcase:before {
+    content: '';
+    /* The background image */
+    background-image: url("./images/kitchen-stock-rem.jpg");
+    /* Set a specified height, or the minimum height for the background image */
+    min-height: 500px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.gallary {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gal-item {
+    margin: .5rem;
+}
+
+.gal-item img {
+    width: 100%;
+    height: 100%;
+}
+
 /* Media Queries for all pages */
 
 @media only screen and (min-width: 460px)  {
@@ -458,6 +508,13 @@ body {
     .services-grid {
         grid-template-columns: 1fr 1fr;
         grid-gap: 0;
+    }
+
+    /* Portfolio */
+
+    .gallary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -511,5 +568,17 @@ body {
     .services-grid {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 0;
+    }
+
+    /* Portfolio */
+
+    .gallary {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .item-4 {
+        grid-column: 1/3;
+        grid-row: 2/4;
     }
 }
