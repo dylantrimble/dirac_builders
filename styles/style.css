@@ -426,6 +426,7 @@ body {
     color: whitesmoke;
     height: 70vh;
     position: relative;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -460,6 +461,69 @@ body {
 .gal-item img {
     width: 100%;
     height: 100%;
+}
+
+/* Contact Page */
+
+.contact-showcase {
+    background-color: var(--overlay-clor);
+    color: whitesmoke;
+    height: 70vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-showcase:before {
+    content: '';
+    /* The background image */
+    background-image: url("./images/planning.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contact-img {
+    display: hidden;
+}
+.contact-frm-container{
+    background-color: var(--overlay-clor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-frm {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-op {
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
 }
 
 /* Media Queries for all pages */
@@ -547,6 +611,52 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* Contact */
+
+    .contact-showcase:before {
+        content: '';
+        /* The background image */
+        background-image: url("./images/planning.jpg");
+        /* Set a specified height, or the minimum height for the background image */
+        min-height: 500px;
+        /* Set background image to fixed (don't scroll along with the page) */
+        background-attachment: fixed;
+        /* Center the background image */
+        background-position: center;
+        /* Set the background image to no repeat */
+        background-repeat: no-repeat;
+        /* Scale the background image to be as large as possible */
+        background-size: cover;
+    }
+    .master-cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 600px;
+        width: 80vw;
+        margin: 5rem;
+
+    }
+
+    .contact-img {
+        background-image: url(./images/remodel_planning.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+    }
+
+    .contact-frm-container{
+        background-color: var(--overlay-clor);
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+
 }
 
 @media only screen and (min-width: 1000px)  {
@@ -588,7 +698,12 @@ body {
         flex-direction: row;
     }
 
-    /* Services */
+    /* Contact */
+
+    .contact-container {
+        height: 700px;
+        width: 60vw;
+    }
 
 }
 

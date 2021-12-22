@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Dirac Builders | Services</title>
 </head>
+
 <body>
 
     <!-- Nav -->
@@ -40,21 +42,44 @@
 
     <!-- Unique Page Content -->
 
-    <h1 style="height: 500px; margin:20px">this is the Contact page</h1>
+    <header class="contact-showcase">
+        <div class="main-container showcase-inner">
+            <h1>We Would Love to Hear From You</h1>
+        </div>
+    </header>
 
-
+    <div class="master-cont">
+        <div class="contact-container">
+            <div class="contact-img">
+            </div>
+            <div class="contact-frm-container">
+                <form class="contact-frm" action="https://formsubmit.co/dyltrimble12@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input  class="form-op"type="text" name="name" placeholder="First Name" required>
+                    <input class="form-op" type="text" name="name" placeholder="Last Name">
+                    <input class="form-op"  type="email" name="email" placeholder="Email" required>
+                    <textarea class="form-op" id="cont-message" name="message" rows="3" cols="21" required></textarea>
+                    <button class="btn" type="submit">Send</button>
+               </form>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
 
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Instagram <i class="bi bi-instagram"></i></a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">facebook <i class="bi bi-facebook"></i></a></li>
-          <li class="nav-item"><a href="mailto:dyltrimble12@gmail.com" class="nav-link px-2 text-muted">Email <i class="bi bi-envelope-check"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Instagram <i
+                        class="bi bi-instagram"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">facebook <i
+                        class="bi bi-facebook"></i></a></li>
+            <li class="nav-item"><a href="mailto:dyltrimble12@gmail.com" class="nav-link px-2 text-muted">Email <i
+                        class="bi bi-envelope-check"></i></a></li>
         </ul>
         <p class="text-center text-muted">© 2021 Dirac Builders LLC</p>
-      </footer>
+    </footer>
 
     <script src="./scripts/app.js"></script>
     <script src="./scripts/navComponent.js"></script>
 </body>
+
 </html>
