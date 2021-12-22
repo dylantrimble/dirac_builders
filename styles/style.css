@@ -307,15 +307,9 @@ body {
 .fixed-bg {
     /* The background image */
     background-image: url("./images/remodel_planning.jpg");
-    /* Set a specified height, or the minimum height for the background image */
     min-height: 500px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
     background-position: center;
-    /* Set the background image to no repeat */
     background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
     background-size: cover;
     z-index: 0;
 }
@@ -374,15 +368,9 @@ body {
     content: '';
     /* The background image */
     background-image: url("./images/concept-reality.jpg");
-    /* Set a specified height, or the minimum height for the background image */
     min-height: 500px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
     background-position: center;
-    /* Set the background image to no repeat */
     background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
     background-size: cover;
     z-index: 0;
     position: absolute;
@@ -447,15 +435,9 @@ body {
     content: '';
     /* The background image */
     background-image: url("./images/kitchen-stock-rem.jpg");
-    /* Set a specified height, or the minimum height for the background image */
     min-height: 500px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
     background-position: center;
-    /* Set the background image to no repeat */
     background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
     background-size: cover;
     z-index: 0;
     position: absolute;
@@ -503,7 +485,39 @@ body {
         width: 585px;
     }
 
+    .fixed-bg {
+        /* The background image */
+        background-image: url("./images/remodel_planning.jpg");
+        /* Set a specified height, or the minimum height for the background image */
+        min-height: 500px;
+        /* Set background image to fixed (don't scroll along with the page) */
+        background-attachment: fixed;
+        /* Center the background image */
+        background-position: center;
+        /* Set the background image to no repeat */
+        background-repeat: no-repeat;
+        /* Scale the background image to be as large as possible */
+        background-size: cover;
+        z-index: 0;
+    }
+
     /* Services */
+
+    .services-showcase:before {
+        content: '';
+        /* The background image */
+        background-image: url("./images/concept-reality.jpg");
+        /* Set a specified height, or the minimum height for the background image */
+        min-height: 500px;
+        /* Set background image to fixed (don't scroll along with the page) */
+        background-attachment: fixed;
+        /* Center the background image */
+        background-position: center;
+        /* Set the background image to no repeat */
+        background-repeat: no-repeat;
+        /* Scale the background image to be as large as possible */
+        background-size: cover;
+    }
 
     .services-grid {
         grid-template-columns: 1fr 1fr;
@@ -511,6 +525,22 @@ body {
     }
 
     /* Portfolio */
+
+    .portfolio-showcase:before {
+        content: '';
+        /* The background image */
+        background-image: url("./images/kitchen-stock-rem.jpg");
+        /* Set a specified height, or the minimum height for the background image */
+        min-height: 500px;
+        /* Set background image to fixed (don't scroll along with the page) */
+        background-attachment: fixed;
+        /* Center the background image */
+        background-position: center;
+        /* Set the background image to no repeat */
+        background-repeat: no-repeat;
+        /* Scale the background image to be as large as possible */
+        background-size: cover;
+    }
 
     .gallary {
         display: grid;
