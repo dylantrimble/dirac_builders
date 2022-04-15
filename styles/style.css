@@ -288,8 +288,8 @@ body {
 
 .carousel-item .slide-text {
     position: absolute;
-    top: 30rem;
-    left: 21rem;
+    top: 15rem;
+    left: 6.5rem;
     color: whitesmoke;
     background-color: var(--primary-color);
     text-align: center;
@@ -648,7 +648,7 @@ body {
 
     /* Main/Home - Universal Components */
     .carousel-item .slide-text {
-        left: 12rem;
+        left: 11rem;
         width: 14.5rem;
     }
 
