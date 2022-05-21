@@ -307,7 +307,7 @@ body {
 
 .fixed-bg {
     /* The background image */
-    background-image: url("./images/remodel_planning.jpg");
+    background-image: url("../styles/images/remodel_planning.jpg");
     min-height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -369,7 +369,7 @@ body {
 .services-showcase:before {
     content: '';
     /* The background image */
-    background-image: url("./images/concept-reality.jpg");
+    background-image: url("../styles/images/concept-reality.jpg");
     min-height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -470,7 +470,7 @@ body {
 .portfolio-showcase:before {
     content: '';
     /* The background image */
-    background-image: url("./images/bathrooms/selBtm6.jpg");
+    background-image: url("../styles/images/bathrooms/selBtm6.jpg");
     min-height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -527,6 +527,7 @@ body {
 
 .contact-showcase {
     background-color: var(--overlay-clor);
+    background-size: cover;
     color: whitesmoke;
     height: 70vh;
     position: relative;
@@ -540,7 +541,7 @@ body {
 .contact-showcase:before {
     content: '';
     /* The background image */
-    background-image: url("./images/planning.jpg");
+    background-image: url("../styles/images/planning.jpg");
     min-height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -594,6 +595,10 @@ body {
 }
 .contact-frm-container h2 {
     display: none;
+}
+
+.master-cont{
+    margin-top: 3em;
 }
 
 
@@ -658,7 +663,7 @@ body {
 
     .fixed-bg {
         /* The background image */
-        background-image: url("./images/remodel_planning.jpg");
+        background-image: url("../styles/images/remodel_planning.jpg");
         /* Set a specified height, or the minimum height for the background image */
         min-height: 500px;
         /* Set background image to fixed (don't scroll along with the page) */
@@ -677,7 +682,7 @@ body {
     .services-showcase:before {
         content: '';
         /* The background image */
-        background-image: url("./images/concept-reality.jpg");
+        background-image: url("../styles/images/concept-reality.jpg");
         /* Set a specified height, or the minimum height for the background image */
         min-height: 500px;
         /* Set background image to fixed (don't scroll along with the page) */
@@ -731,7 +736,7 @@ body {
     .portfolio-showcase:before {
         content: '';
         /* The background image */
-        background-image: url("./images/bathrooms/troubBtm3.jpg");
+        background-image: url("../styles/images/bathrooms/troubBtm3.jpg");
         /* Set a specified height, or the minimum height for the background image */
         min-height: 500px;
         /* Set background image to fixed (don't scroll along with the page) */
@@ -754,7 +759,7 @@ body {
     .contact-showcase:before {
         content: '';
         /* The background image */
-        background-image: url("./images/planning.jpg");
+        background-image: url("../styles/images/planning.jpg");
         /* Set a specified height, or the minimum height for the background image */
         min-height: 500px;
         /* Set background image to fixed (don't scroll along with the page) */
@@ -770,6 +775,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 3em;
     }
     .contact-container {
         display: grid;
@@ -781,7 +787,7 @@ body {
 
     .contact-img {
         /* background-color: var(--overlay-clor); */
-        background-image: url(./images/remodel_planning.jpg);
+        background-image: url(../styles/images/remodel_planning.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -892,9 +898,7 @@ body {
 @media only screen and (min-width: 1400px) {
     
     /* Services */
-    .services-grid {
-        
-    }
+    
 
     /* Portfolio */
 
